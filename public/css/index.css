@@ -1,0 +1,323 @@
+body {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.app-title {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  margin-top: 3%;
+}
+
+.app-title,
+.github-section,
+.source-section,
+.feedback-section {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.difficulty-section,
+.creator-section,
+.p5-section {
+  padding: 1rem;
+}
+
+/* Invert colors when text selecting */
+.app-title > ::selection,
+.github-section > ::selection,
+.source-section > ::selection {
+  background-color: #fff;
+  color: #000;
+}
+
+.difficulty-section > ::selection,
+.creator-section > ::selection,
+.p5-section > ::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+/* for Firefox */
+.app-title > ::-moz-selection,
+.github-section > ::-moz-selection,
+.source-section > ::-moz-selection {
+  background-color: #fff;
+  color: #000;
+}
+
+.difficulty-section > ::-moz-selection,
+.creator-section > ::-moz-selection,
+.p5-section > ::-moz-selection {
+  background-color: #000;
+  color: #fff;
+}
+
+.options > button {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 7px;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  width: 20%;
+  min-width: 100px;
+  max-width: 300px;
+}
+
+.options > button:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 0 10px #000;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.repository-link:hover,
+.made-by:hover,
+.source-link:hover,
+.p5-link:hover {
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+.github-section {
+  padding-bottom: 2.5rem;
+}
+
+.repository-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 2px solid #fff;
+  border-radius: 7px;
+}
+
+.repository-link:hover,
+.source-link:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 10px #fff;
+}
+
+.made-by {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 2px solid #000;
+  border-radius: 7px;
+  font-size: 1.6rem;
+}
+
+.made-by:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 0 10px #000;
+}
+
+.source-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  font-size: 1.6rem;
+}
+
+.p5-link {
+  color: #ed225d;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 2px solid #ed225d;
+  border-radius: 7px;
+  font-size: 1.4rem;
+}
+
+.p5-link:hover {
+  background-color: #ed225d;
+  color: #fff;
+  box-shadow: 0 0 10px #ed225d;
+}
+
+.p5-description {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+}
+
+.p5-word {
+  color: #ed225d;
+}
+
+.p5-word::selection {
+  background-color: #ed225d;
+  color: #fff;
+}
+/* for Firefox */
+.p5-word::-moz-selection {
+  background-color: #ed225d;
+  color: #fff;
+}
+
+.feedback-section {
+  padding-bottom: 2rem;
+  margin-bottom: 3%;
+}
+
+.feedback-form {
+  margin: 0 auto;
+  width: 70%;
+  max-width: 700px;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  padding: 1rem;
+}
+
+.form-control {
+  align-items: center;
+  justify-content: center;
+  display: block;
+  font-size: 1.2rem;
+}
+
+.form-control > label {
+  display: block;
+  margin: 0.5rem;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+.form-control > input {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  border: none;
+  text-align: center;
+}
+
+.form-control > textarea {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+/* when selected */
+.form-control > input:focus,
+.form-control > input:active,
+.form-control > textarea:focus,
+.form-control > textarea:active {
+  outline: none;
+  box-shadow: 0 0 10px #fff;
+  color: #000;
+}
+
+.feedback-btn,
+.reset-btn {
+  width: 40%;
+  padding: 0.5rem;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.feedback-btn:hover,
+.reset-btn:hover {
+  color: #fff;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.feedback-btn:hover {
+  background-color: #2452fa;
+  box-shadow: 0 0 10px rgb(138, 230, 255);
+}
+
+.reset-btn:hover {
+  background-color: #ed225d;
+  box-shadow: 0 0 10px rgb(255, 138, 138);
+}
+
+@media screen and (max-width: 600px) {
+  .made-by {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .source-link {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    margin-top: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .source-link {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .p5-link {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+  .p5-description {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    margin-top: -0.5rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    width: 95%;
+  }
+  .feedback-form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .app-title {
+    font-size: 1rem;
+  }
+}

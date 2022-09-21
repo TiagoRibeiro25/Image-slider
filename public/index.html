@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <header class="app-title">
+      <h1 class="align-center">Image Slider</h1>
+    </header>
+    <main>
+      <!-- Difficulty -->
+      <section class="align-center difficulty-section">
+        <h2>Choose the Difficulty</h2>
+        <div class="options">
+          <button data-difficulty="normal">Normal</button>
+          <button data-difficulty="advanced">Advanced</button>
+        </div>
+      </section>
+      <!-- GitHub Repository -->
+      <section class="align-center github-section">
+        <h2>GitHub Repository</h2>
+        <div>
+          <a
+            href="#"
+            class="repository-link"
+            alt="GitHub Repository"
+            target="_blank"
+            >Image Slider Rep</a
+          >
+        </div>
+      </section>
+      <!-- Made by Creator -->
+      <section class="align-center creator-section">
+        <h2>
+          Made by
+          <a
+            href="https://github.com/TiagoRibeiro25"
+            class="made-by"
+            alt="Creator"
+            target="_blank"
+            >Tiago Ribeiro</a
+          >
+        </h2>
+      </section>
+      <!-- Source of the Exercise -->
+      <section class="align-center source-section">
+        <h2>
+          Exercise from
+          <a
+            href="https://www.youtube.com/watch?v=uQZLzhrzEs4"
+            class="source-link"
+            alt="Source"
+            target="_blank"
+          >
+            Coding Challenge 165</a
+          >
+        </h2>
+      </section>
+      <!-- About p5.js -->
+      <section class="align-center p5-section">
+        <h2>
+          App made with
+          <a
+            href="https://p5js.org/"
+            class="p5-link"
+            alt="p5.js"
+            target="_blank"
+            >p5.js</a
+          >
+        </h2>
+        <p class="p5-description">
+          <span class="p5-word">p5.js</span> is a JavaScript library for
+          creative coding, with a focus on making coding accessible and
+          inclusive for artists, designers, educators, beginners, and anyone
+          else! <span class="p5-word">p5.js</span> is free and open-source.
+        </p>
+      </section>
+      <!-- Send Feedback -->
+      <section class="align-center feedback-section">
+        <h2>Send Me Feedback</h2>
+        <form class="feedback-form">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              maxlength="500"
+              placeholder="Max 500 characters allowed..."
+              required
+            ></textarea>
+          </div>
+          <input type="reset" class="reset-btn" value="Reset" />
+          <input type="submit" class="feedback-btn" value="Send" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
