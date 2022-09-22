@@ -22,6 +22,18 @@ header,
   min-width: 370px;
 }
 
+header > ::selection,
+.bottom-options > ::selection {
+  background-color: #fff;
+  color: #000;
+}
+/* for Firefox */
+header > ::-moz-selection,
+.bottom-options > ::-moz-selection {
+  background-color: #fff;
+  color: #000;
+}
+
 .top-options > button,
 .bottom-options > button {
   background-color: #000;
