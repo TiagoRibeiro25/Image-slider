@@ -65,8 +65,18 @@ main {
   justify-content: space-between;
 }
 
-canvas {
+.image-div,
+.canvas-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
+  width: 50%;
+}
+
+canvas,
+img {
   border: 1px solid #000;
 }
 
@@ -86,15 +96,6 @@ canvas {
 .bottom-options > p > span {
   font-family: "Courier New", Courier, monospace;
   color: #5f9af8;
-}
-
-@media screen and (max-width: 500px) {
-  /* align the header and the canvas in the middle of the page*/
-  header,
-  canvas {
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 
 @media screen and (max-width: 1270px) {

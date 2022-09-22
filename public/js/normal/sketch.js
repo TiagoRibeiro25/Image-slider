@@ -15,7 +15,7 @@ function preload() {
   let randomImage = Math.floor(Math.random() * 1000);
   source = loadImage("https://picsum.photos/400/400?image=" + randomImage);
 
-  document.querySelector("main").innerHTML = `
+  document.querySelector("main div").innerHTML = `
     <img src="https://picsum.photos/400/400?image=${randomImage}" alt="Original Image">
   `;
 }
@@ -25,6 +25,11 @@ function setup() {
   document.querySelector("#status-value").style.color = "#ffdd00";
 
   createCanvas(400, 400);
+
+  // put the canvas inside the main div
+  let canvas = document.querySelector("canvas");
+  document.querySelector("main .canvas-div").appendChild(canvas);
+
   // pixel dimensions of each tiles
   w = width / cols;
   h = height / rows;

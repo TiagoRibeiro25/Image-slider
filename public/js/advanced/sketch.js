@@ -10,6 +10,11 @@ function setup() {
   document.querySelector("#status-value").style.color = "#ffdd00";
 
   createCanvas(400, 400);
+
+  // put the canvas inside the main div
+  let canvas = document.querySelector("canvas");
+  document.querySelector("main .canvas-div").appendChild(canvas);
+
   source = createGraphics(400, 400);
   w = width / cols;
   h = height / rows;
