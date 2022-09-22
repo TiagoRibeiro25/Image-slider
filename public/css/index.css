@@ -274,7 +274,7 @@ body {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 716px) {
   .source-link {
     display: block;
     width: 400px;

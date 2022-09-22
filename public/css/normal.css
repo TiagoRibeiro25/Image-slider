@@ -1,8 +1,82 @@
 html,
 body {
+  font-family: "Lucida Console", Monaco, monospace;
   margin: 0;
   padding: 0;
+  margin: 0 auto;
+  width: 80%;
 }
+
+header,
+.reset-btn-section {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  margin-top: 3%;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  min-width: 370px;
+}
+
+.top-options > button,
+.bottom-options > button {
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 20%;
+  min-width: 100px;
+  max-width: 250px;
+}
+
+.top-options > button:hover,
+.bottom-options > button:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 10px #fff;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
 canvas {
+  margin: 0 auto;
   display: block;
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reset-btn-section {
+  margin-top: 2rem;
+}
+
+.bottom-options > button {
+  min-width: 130px;
+}
+
+.bottom-options > p {
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.bottom-options > p > span {
+  font-family: "Courier New", Courier, monospace;
+  color: #ffdd00;
+}
+
+@media screen and (max-width: 500px) {
+  /* align the header and the canvas in the middle of the page*/
+  header,
+  canvas {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

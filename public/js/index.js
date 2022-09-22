@@ -5,9 +5,9 @@ const difficultyChoices = {
 
 document.querySelectorAll(".options button").forEach((btn) => {
   btn.addEventListener("click", () => {
-    const difficulty = btn.getAttribute("data-difficulty");
+    const difficulty = btn.getAttribute("data");
     const location = difficultyChoices[difficulty];
-    window.open(location, "_blank");
+    window.location.href = location;
   });
 });
 

@@ -11,7 +11,8 @@ let board = [];
 
 // Loading the image
 function preload() {
-  source = loadImage("../../assets/choochoobot.png");
+  // get a random image from "https://picsum.photos/"
+  source = loadImage("https://picsum.photos/400/400");
 }
 
 function setup() {
@@ -103,6 +104,9 @@ function draw() {
   // If it is solved
   if (isSolved()) {
     console.log("SOLVED");
+    document.querySelector("#status-value").innerText = "SOLVED!";
+    document.querySelector("#status-value").style.color = "green";
+    noLoop();
   }
 }
 
