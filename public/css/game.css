@@ -19,7 +19,6 @@ header,
   padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
-  min-width: 370px;
 }
 
 header > ::selection,
@@ -32,6 +31,18 @@ header > ::-moz-selection,
 .bottom-options > ::-moz-selection {
   background-color: #fff;
   color: #000;
+}
+
+header > p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+header > p > span {
+  color: #5f9af8;
+  font-size: 1rem;
 }
 
 .top-options > button,
@@ -104,5 +115,11 @@ img {
   }
   canvas {
     margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    width: 100%;
   }
 }
