@@ -58,12 +58,16 @@ header > ::-moz-selection,
   transform: scale(1.1);
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 canvas {
   margin: 0 auto;
-  display: block;
   border: 1px solid #000;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .reset-btn-section {
@@ -81,7 +85,7 @@ canvas {
 
 .bottom-options > p > span {
   font-family: "Courier New", Courier, monospace;
-  color: #ffdd00;
+  color: #5f9af8;
 }
 
 @media screen and (max-width: 500px) {
@@ -90,5 +94,14 @@ canvas {
   canvas {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  main {
+    flex-direction: column;
+  }
+  canvas {
+    margin-top: 2rem;
   }
 }

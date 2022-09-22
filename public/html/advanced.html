@@ -5,11 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Slider - Advanced</title>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="../css/game.css" />
   </head>
   <body>
+    <header>
+      <h1>Image Slider - Advanced</h1>
+      <div class="top-options">
+        <button data="main">Main</button>
+        <button data="normal">Normal</button>
+      </div>
+    </header>
+    <!-- Element where the canvas will be in -->
+    <main></main>
+    <section class="reset-btn-section">
+      <div class="bottom-options">
+        <p>Status: <span id="status-value">Loading...</span></p>
+        <button id="reset-btn">Reset Image</button>
+      </div>
+    </section>
+
+    <script src="../js/game-btns.js"></script>
     <script src="../js/advanced/tile.js"></script>
     <script src="../js/advanced/sketch.js"></script>
   </body>

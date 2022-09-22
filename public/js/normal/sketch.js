@@ -12,10 +12,18 @@ let board = [];
 // Loading the image
 function preload() {
   // get a random image from "https://picsum.photos/"
-  source = loadImage("https://picsum.photos/400/400");
+  let randomImage = Math.floor(Math.random() * 1000);
+  source = loadImage("https://picsum.photos/400/400?image=" + randomImage);
+
+  document.querySelector("main").innerHTML = `
+    <img src="https://picsum.photos/400/400?image=${randomImage}" alt="Original Image">
+  `;
 }
 
 function setup() {
+  document.querySelector("#status-value").innerText = "Playing...";
+  document.querySelector("#status-value").style.color = "#ffdd00";
+
   createCanvas(400, 400);
   // pixel dimensions of each tiles
   w = width / cols;

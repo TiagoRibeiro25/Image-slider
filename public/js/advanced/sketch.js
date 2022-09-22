@@ -6,6 +6,9 @@ let w, h;
 let board = [];
 
 function setup() {
+  document.querySelector("#status-value").innerText = "Playing...";
+  document.querySelector("#status-value").style.color = "#ffdd00";
+
   createCanvas(400, 400);
   source = createGraphics(400, 400);
   w = width / cols;
@@ -98,6 +101,9 @@ function draw() {
 
   if (isSolved()) {
     console.log("SOLVED");
+    document.querySelector("#status-value").innerText = "SOLVED!";
+    document.querySelector("#status-value").style.color = "green";
+    noLoop();
   }
 }
 
