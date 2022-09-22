@@ -8,7 +8,7 @@ body {
 }
 
 header,
-.reset-btn-section {
+.bottom-section {
   text-align: center;
   font-weight: bold;
   margin: 0;
@@ -22,13 +22,13 @@ header,
 }
 
 header > ::selection,
-.bottom-options > ::selection {
+.bottom-section > ::selection {
   background-color: #fff;
   color: #000;
 }
 /* for Firefox */
 header > ::-moz-selection,
-.bottom-options > ::-moz-selection {
+.bottom-section > ::-moz-selection {
   background-color: #fff;
   color: #000;
 }
@@ -45,8 +45,7 @@ header > p > span {
   font-size: 1rem;
 }
 
-.top-options > button,
-.bottom-options > button {
+.top-options > button {
   background-color: #000;
   border: 2px solid #fff;
   border-radius: 7px;
@@ -60,8 +59,7 @@ header > p > span {
   max-width: 250px;
 }
 
-.top-options > button:hover,
-.bottom-options > button:hover {
+.top-options > button:hover {
   background-color: #fff;
   color: #000;
   box-shadow: 0 0 10px #fff;
@@ -91,20 +89,16 @@ img {
   border: 1px solid #000;
 }
 
-.reset-btn-section {
+.bottom-section {
   margin-top: 2rem;
 }
 
-.bottom-options > button {
-  min-width: 130px;
-}
-
-.bottom-options > p {
+.bottom-section > p {
   font-size: 1.2rem;
   padding: 0;
 }
 
-.bottom-options > p > span {
+.bottom-section > p > span {
   font-family: "Courier New", Courier, monospace;
   color: #5f9af8;
 }

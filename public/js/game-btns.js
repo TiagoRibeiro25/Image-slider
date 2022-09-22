@@ -11,13 +11,3 @@ document.querySelectorAll(".top-options button").forEach((btn) => {
     window.location.href = location;
   });
 });
-
-document.querySelector("#reset-btn").addEventListener("click", () => {
-  noLoop();
-  // delete all the canvas
-  document.querySelectorAll("canvas").forEach((canvas) => {
-    canvas.remove();
-  });
-  loop();
-  setup();
-});
