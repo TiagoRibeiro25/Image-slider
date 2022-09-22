@@ -1,4 +1,4 @@
-const difficultyChoices = {
+const btnsLinks = {
   normal: "../html/normal.html",
   advanced: "../html/advanced.html",
 };
@@ -6,7 +6,7 @@ const difficultyChoices = {
 document.querySelectorAll(".options button").forEach((btn) => {
   btn.addEventListener("click", () => {
     const difficulty = btn.getAttribute("data");
-    const location = difficultyChoices[difficulty];
+    const location = btnsLinks[difficulty];
     window.location.href = location;
   });
 });
