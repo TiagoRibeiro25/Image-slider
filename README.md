@@ -1,3 +1,3 @@
 # Image-slider
 
-Live Demo: https://image-slider-2022.herokuapp.com/
+Live Demo: https://img-slider.onrender.com/
